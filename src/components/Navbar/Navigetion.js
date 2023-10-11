@@ -9,6 +9,7 @@ import "./nav.css";
 function Navigetion() {
   const [shop, setIsShop] = useState(false);
   const [learn, setLearn] = useState(false);
+  const [help, setHelp] = useState(false);
   return (
     <header className="header">
       <div className="container">
@@ -49,7 +50,23 @@ function Navigetion() {
               </div>
             )}
           </ul>
-          <ul className="links">HELP *</ul>
+          <ul
+            className="links"
+            onMouseEnter={() => setHelp(!help)}
+            onMouseLeave={() => setHelp(false)}
+          >
+            HELP *
+            {help && (
+              <div className="div">
+                <li>under constraction</li>
+                <li>under constraction</li>
+                <li>under constraction</li>
+                <li>under constraction</li>
+                <li>under constraction</li>
+                <li>under constraction</li>
+              </div>
+            )}
+          </ul>
         </nav>
       </div>
       <div className="icons">
