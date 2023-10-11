@@ -1,10 +1,11 @@
 import "./App.css";
+import Navigetion from "./components/Navbar/Navigetion";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hi</h1>
-    </div>
+    <>
+      <Navigetion />
+    </>
   );
 }
 
