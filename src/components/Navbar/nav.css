@@ -41,6 +41,10 @@ body {
   margin: 0px 30px;
 }
 
+.links {
+  list-style-type: none;
+}
+
 .icons {
   display: flex;
   flex-direction: row;

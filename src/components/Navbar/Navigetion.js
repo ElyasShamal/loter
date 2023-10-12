@@ -29,14 +29,16 @@ function Navigetion() {
               SHOP <FontAwesomeIcon icon={faAngleDown} />
               {shop && (
                 <div className="div">
-                  <li>under constraction</li>
-                  <li>under constraction</li>
-                  <li>under constraction</li>
-                  <li>under constraction</li>
-                  <li>under constraction</li>
-                  <li>under constraction</li>
-                  <li>under constraction</li>
-                  <li>under constraction</li>
+                  <div onClick={() => setIsShop(!shop)}>
+                    <li>Home</li>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                  </div>
                 </div>
               )}
             </ul>
@@ -49,10 +51,12 @@ function Navigetion() {
               LEARN <FontAwesomeIcon icon={faAngleDown} />
               {learn && (
                 <div className="div">
-                  <li>under constraction</li>
-                  <li>under constraction</li>
-                  <li>under constraction</li>
-                  <li>under constraction</li>
+                  <div onClick={() => setLearn(!learn)}>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                  </div>
                 </div>
               )}
             </ul>
@@ -64,14 +68,16 @@ function Navigetion() {
               HELP <FontAwesomeIcon icon={faAngleDown} />
               {help && (
                 <div className="div">
-                  <li>under constraction</li>
-                  <li>under constraction</li>
-                  <li>under constraction</li>
-                  <li>under constraction</li>
-                  <li>under constraction</li>
-                  <li>under constraction</li>
-                  <li>under constraction</li>
-                  <li>under constraction</li>
+                  <div onClick={() => setHelp(!help)}>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                    <li>under constraction</li>
+                  </div>
                 </div>
               )}
             </ul>
@@ -95,6 +101,7 @@ function Navigetion() {
           </div>
         </div>
       </header>
+      {/* hanburger menu */}
       {showMenu && (
         <div className="open">
           <ul className="open-menu" onClick={() => setIsShop(!shop)}>
