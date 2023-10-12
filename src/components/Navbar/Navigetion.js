@@ -10,7 +10,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Home from "../Home/Home";
 import Menu from "../Home/Menu";
-import "./nav.css";
 
 function Navigetion() {
   const [shop, setIsShop] = useState(false);
