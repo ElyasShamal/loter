@@ -27,7 +27,6 @@ function Navigetion() {
 
             <nav className="navbar">
               <ul
-                className="links"
                 onMouseEnter={() => setIsShop(!shop)}
                 onMouseLeave={() => setIsShop(false)}
               >
