@@ -9,7 +9,6 @@ import {
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import Home from "../Home/Home";
-import Menu from "../Home/Menu";
 
 function Navigetion() {
   const [shop, setIsShop] = useState(false);
@@ -27,6 +26,7 @@ function Navigetion() {
 
             <nav className="navbar">
               <ul
+                className="links"
                 onMouseEnter={() => setIsShop(!shop)}
                 onMouseLeave={() => setIsShop(false)}
               >
@@ -34,7 +34,7 @@ function Navigetion() {
                 {shop && (
                   <div className="div">
                     <div onClick={() => setIsShop(!shop)}>
-                      <Link to="/Menu" className="links">
+                      <Link to="/" className="links">
                         <li>Home</li>
                       </Link>
 
@@ -159,7 +159,6 @@ function Navigetion() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Menu" element={<Menu />} />
         </Routes>
       </div>
     </Router>
