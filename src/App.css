@@ -145,9 +145,59 @@
 
 .advertisment p {
   font-size: 2rem;
-  margin: 40px 0px;
+  margin: 30px 0px;
 }
 
 .advertisment button {
   padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  outline-offset: none;
+  cursor: pointer;
+  background: linear-gradient(to right, hsla(0, 0%, 96%, 0.826) 50%, white 50%);
+  background-size: 200% 100%;
+  transition: background-position 1s ease-in-out;
+  margin-top: 0.3rem;
+}
+
+.advertisment button:hover {
+  background-position: -100% 0;
+}
+
+.grid {
+  margin: 2rem 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  z-index: 1;
+}
+
+.grid div {
+  color: #fff;
+  height: 250px;
+}
+
+.grid div img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.flex {
+  position: absolute;
+  display: flex;
+}
+
+.flex h3 {
+  color: #fff;
+  padding: 10px;
+}
+
+.span {
+  margin-left: 10%;
+  border: 1px solid red;
+  height: fit-content;
+  border-radius: 50% 0 50% 0;
+  background-color: red;
+  color: #fff;
+  padding: 5px;
 }
