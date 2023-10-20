@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import textContent from "./textContents";
+import Section from "./Section";
 
 import image1 from "../images/image-1.jpg";
 import image2 from "../images/image-2.jpg";
@@ -62,6 +63,7 @@ function Home() {
           </section>
         </div>
       </div>
+      <Section />
     </main>
   );
 }
