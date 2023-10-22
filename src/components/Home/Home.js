@@ -5,6 +5,7 @@ import Section from "./Section";
 import image1 from "../images/image-1.jpg";
 import image2 from "../images/image-2.jpg";
 import image3 from "../images/image-3.jpg";
+import Categories from "../Categories";
 
 function Home() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -36,34 +37,35 @@ function Home() {
               <div className="flex">
                 <h3>Mens</h3>
               </div>
-              <img src={image1} style={{ width: "100%" }} />
-              <button>Shop Now</button>
+              <img src={image1} alt="Mens" />
+              <button className="shopbtn">Shop Now</button>
             </div>
             <div>
               <div className="flex">
                 <h3>Womans</h3>
               </div>
-              <img src={image2} style={{ width: "100%" }} />
-              <button>Shop Now</button>
+              <img src={image2} alt="Womans" />
+              <button className="shopbtn">Shop Now</button>
             </div>
             <div>
               <div className="flex">
                 <h3>Kids</h3>
               </div>
-              <img src={image3} style={{ width: "100%" }} />
-              <button>Shop Now</button>
+              <img src={image3} alt="Kids" />
+              <button className="shopbtn">Shop Now</button>
             </div>
             <div>
               <div className="flex">
                 <h3>Electronics</h3>
               </div>
-              <img src={image1} style={{ width: "100%" }} />
-              <button>Shop Now</button>
+              <img src={image1} alt="Electronic" />
+              <button className="shopbtn">Shop Now</button>
             </div>
           </section>
         </div>
       </div>
       <Section />
+      <Categories />
     </main>
   );
 }
