@@ -5,6 +5,7 @@ import Section from "./Section";
 import image1 from "../images/image-1.jpg";
 import image2 from "../images/image-2.jpg";
 import image3 from "../images/image-3.jpg";
+import mens from "../images/men.png";
 import Categories from "../Categories";
 
 function Home() {
@@ -37,7 +38,7 @@ function Home() {
               <div className="flex">
                 <h3>Mens</h3>
               </div>
-              <img src={image1} alt="Mens" />
+              <img src={mens} alt="Mens" />
               <button className="shopbtn">Shop Now</button>
             </div>
             <div>
